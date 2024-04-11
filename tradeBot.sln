@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot", "tradeBot\tradeBot.csproj", "{C61B239E-5F5B-4F55-9EC0-5295995BD33C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.TelegramBot", "tradeBot.TelegramBot\tradeBot.TelegramBot.csproj", "{A22518DC-EB33-4C21-AE3A-AB5BAFB0DB7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.DAL", "tradeBot.DAL\tradeBot.DAL.csproj", "{F6357094-4D4B-47EB-B488-7F783F11C94B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.API", "tradeBot.API\tradeBot.API.csproj", "{8E0C9D41-9B30-4406-BC56-AB645B60D940}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C61B239E-5F5B-4F55-9EC0-5295995BD33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C61B239E-5F5B-4F55-9EC0-5295995BD33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C61B239E-5F5B-4F55-9EC0-5295995BD33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C61B239E-5F5B-4F55-9EC0-5295995BD33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22518DC-EB33-4C21-AE3A-AB5BAFB0DB7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22518DC-EB33-4C21-AE3A-AB5BAFB0DB7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22518DC-EB33-4C21-AE3A-AB5BAFB0DB7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22518DC-EB33-4C21-AE3A-AB5BAFB0DB7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6357094-4D4B-47EB-B488-7F783F11C94B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6357094-4D4B-47EB-B488-7F783F11C94B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6357094-4D4B-47EB-B488-7F783F11C94B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6357094-4D4B-47EB-B488-7F783F11C94B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
