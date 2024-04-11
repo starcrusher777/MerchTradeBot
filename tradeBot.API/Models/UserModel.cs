@@ -1,10 +1,10 @@
-﻿namespace tradeBot.DAL.Entities;
+﻿namespace tradeBot.API.Models;
 
-public class UserEntity
+public class UserModel
 {
     public long Id { get; set; }
     public long TelegramId { get; set; }
     public string Username { get; set; }
     public long password { get; set; }
-    public List<OfferEntity> Offers { get; set; } = new();
+    public List<OfferModel> Offers { get; set; }
 }
