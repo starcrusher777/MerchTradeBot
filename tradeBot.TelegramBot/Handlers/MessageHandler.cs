@@ -45,13 +45,30 @@ public class MessageHandler
     public async Task<Message> SellingOffer(ITelegramBotClient _client, Message message,
         CancellationToken cancellationToken)
     {
+        
         var splittedMsg = (string.IsNullOrEmpty(message.Text) ? message.Caption : message.Text).Split(' ').ToList();
         splittedMsg.RemoveAt(0);
         var text = string.Join(" ", splittedMsg);
-        var userId = message.From.Id;
+        var telegramId = message.From.Id;
+        var offerType = text[2].ToString();
+        var name = text[3].ToString();
+        var price = text[4];
+        var description = text[5].ToString();
+        byte[] imageData;
+        using (var ms = new MemoryStream())
+        {
+            await _client.GetInfoAndDownloadFileAsync(message.Photo[0].FileId, ms, cancellationToken);
+            imageData = ms.ToArray();
+        }
+        
         OfferModel offerModel = new OfferModel()
         {
-            
+            UserId = telegramId,
+            OfferType = offerType,
+            Name = name,
+            Price = price,
+            Description = description,
+            ImageData = imageData 
         };
         return new Message();
     }

@@ -164,3 +164,5 @@ C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\runtimes\win\
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\tradeBot.DAL.dll
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\tradeBot.DAL.pdb
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.API\bin\Debug\net8.0\Newtonsoft.Json.dll

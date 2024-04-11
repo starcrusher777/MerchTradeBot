@@ -152,3 +152,4 @@ C:\Users\Ян\RiderProjects\tradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.genruntimeconfig.cache
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.DAL\obj\Debug\net8.0\ref\tradeBot.DAL.dll
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot.DAL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.LazyLoading.dll
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.DAL\bin\Debug\net8.0\AutoMapper.dll
