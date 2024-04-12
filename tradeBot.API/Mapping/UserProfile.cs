@@ -4,7 +4,7 @@ using tradeBot.DAL.Entities;
 
 namespace tradeBot.API.Mapping;
 
-public class UserProfile
+public class UserProfile : Profile
 {
     public UserProfile()
     {

@@ -9,10 +9,14 @@ namespace tradeBot.TelegramBot.Handlers;
 public class CallbackHandler
 {
     private readonly TelegramBotClient _client;
+    private readonly MessageHelper _messageHelper;
+    private readonly Connector.Connector _connector;
 
     public CallbackHandler(TelegramBotClient client)
     {
         _client = client;
+        _messageHelper = _messageHelper.GetInstance(client);
+        _connector = connector;
     }
     
     public async Task OnMessageReceived(Message message, CancellationToken cancellationToken)
@@ -26,11 +30,26 @@ public class CallbackHandler
     }
     public async Task OnCallbackReceived(CallbackQuery callbackQuery, CancellationToken cancellationToken)
     {
+        var previousPath = await _connector.API.Telegram.GetPreviousMenu(callbackQuery.From.Id);
+        var isBackButton = callbackQuery.Data.EndsWith("!back");
+        var backButtonCallback = previousPath.Split("=").Last();
+
+        if (isBackButton)
+        {
+            callbackQuery.Data = callbackQuery.Data.Split("!back").First();
+            var temp = previousPath.Split("=").ToList();
+            temp.RemoveAt(temp.Count - 1);
+            previousPath = string.Join("=", temp);
+            await _connector.API.Telegram.SetPreviousMenu(callbackQuery.From.Id, string.IsNullOrEmpty(previousPath) ? "=toMainMenu" : previousPath);
+            temp.RemoveAt(temp.Count - 1);
+            backButtonCallback = temp.Last();
+        }
+
+        var button = InlineKeyboardButton.WithCallbackData("Назад", $"{backButtonCallback}!back");
         var action = callbackQuery.Data.Split(' ')[0] switch
         {
             "mainMenu" => MainMenu(_client, callbackQuery),
-            "countWarps" => CountWarps(_client, callbackQuery),
-            "countJade" => CountJade(_client, callbackQuery),
+            
             _ => HandleUnrecognizedCallback(_client, callbackQuery)
         };
 
@@ -44,17 +63,7 @@ public class CallbackHandler
             text: "Основное меню",
             replyMarkup: KeyboardHelper.GetMainMenuKeyboard(callbackQuery.From.Id));
     }
-
-    public async Task<Message> CountWarps(ITelegramBotClient botClient, CallbackQuery callbackQuery)
-    {
-        return new Message();
-    }
     
-    public async Task<Message> CountJade(ITelegramBotClient botClient, CallbackQuery callbackQuery)
-    {
-        return new Message();
-    }
-
     private async Task<Message> HandleUnrecognizedCallback(ITelegramBotClient botClient, CallbackQuery callbackQuery)
     {
         // Handle or log the fact that the callback data is not recognized.

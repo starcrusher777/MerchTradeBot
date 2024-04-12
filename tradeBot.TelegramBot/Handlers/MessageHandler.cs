@@ -31,7 +31,8 @@ public class MessageHandler
         
         var action = messageText.Split(' ')[0] switch
         {
-            "/продажа" => SellingOffer(_client, message, cancellationToken),
+            "/start"    => Start(_client, message, cancellationToken),
+            "/продажа"  => SellingOffer(_client, message, cancellationToken),
             
             _ => null
         };
@@ -41,6 +42,12 @@ public class MessageHandler
             await action;
         }
     }
+
+    private async Task<Message> Start(ITelegramBotClient _client, Message message, CancellationToken cancellationToken)
+    {
+        return await _client.SendTextMessageAsync(chatId: message.From.Id, 
+            text: "Для начала, введите свой логин и пароль через пробел.\\n\" +\n                  \"Пример: \\\"username 123123\\", cancellationToken: cancellationToken);
+    }
     
     public async Task<Message> SellingOffer(ITelegramBotClient _client, Message message,
         CancellationToken cancellationToken)
@@ -49,6 +56,7 @@ public class MessageHandler
         var splittedMsg = (string.IsNullOrEmpty(message.Text) ? message.Caption : message.Text).Split(' ').ToList();
         splittedMsg.RemoveAt(0);
         var text = string.Join(" ", splittedMsg);
+        var textList = text.ToList();
         var telegramId = message.From.Id;
         var offerType = text[2].ToString();
         var name = text[3].ToString();

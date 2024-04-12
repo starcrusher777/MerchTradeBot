@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.DAL", "tradeBot.DA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.API", "tradeBot.API\tradeBot.API.csproj", "{8E0C9D41-9B30-4406-BC56-AB645B60D940}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tradeBot.Connector", "tradeBot.Connector\tradeBot.Connector.csproj", "{9CBA2B78-FAEA-4581-9F32-A79EDF5F6ADC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E0C9D41-9B30-4406-BC56-AB645B60D940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CBA2B78-FAEA-4581-9F32-A79EDF5F6ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CBA2B78-FAEA-4581-9F32-A79EDF5F6ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CBA2B78-FAEA-4581-9F32-A79EDF5F6ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CBA2B78-FAEA-4581-9F32-A79EDF5F6ADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

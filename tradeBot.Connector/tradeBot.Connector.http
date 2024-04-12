@@ -1,0 +1,6 @@
+@tradeBot.Connector_HostAddress = http://localhost:5185
+
+GET {{tradeBot.Connector_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
