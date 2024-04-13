@@ -8,7 +8,6 @@ public class OfferProfile : Profile
 {
     public OfferProfile()
     {
-        CreateMap<OfferModel, OfferEntity>();
-        CreateMap<OfferEntity, OfferModel>();
+        CreateMap<OfferModel, OfferEntity>().ReverseMap();
     }
 }

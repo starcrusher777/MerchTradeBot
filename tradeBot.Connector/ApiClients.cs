@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using tradeBot.Connector.API;
 using Refit;
+using tradeBot.Connector.API;
 
 namespace tradeBot.Connector;
 
@@ -9,11 +9,8 @@ public class ApiClients
 {
 
     private IHost _host;
-#if DEBUG
     private string _baseUrl = "https://localhost:4242/";
-#else
-    private string _baseUrl = "";
-#endif
+
 
     public ApiClients(List<(string, string)> authHeaders)
     {
