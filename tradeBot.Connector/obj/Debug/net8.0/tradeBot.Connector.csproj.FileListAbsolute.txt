@@ -1,0 +1,7 @@
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.csproj.AssemblyReference.cache
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.AssemblyInfoInputs.cache
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.AssemblyInfo.cs
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.csproj.CoreCompileInputs.cache
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot.Connector\obj\Debug\net8.0\tradeBot.Connector.MvcApplicationPartsAssemblyInfo.cache

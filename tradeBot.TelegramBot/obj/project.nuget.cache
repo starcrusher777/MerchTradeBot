@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "/3Oap7u4byr7341VPK0HuBQGD66Wg0asM9Jvu/0PSwfPNl9BZsVhORyNWbNNermXTPubiGpAsc6WDJWTDqlvUw==",
-  "success": false,
+  "dgSpecHash": "KApKKYX2zLoG4LXegg862RZeRpGUVwW+mEzLaIrp9p1tNhSPf42LN92uUIYnnWSpUpSZMO/9b1Ax1EzOcgtKfA==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.TelegramBot\\tradeBot.TelegramBot.csproj",
   "expectedPackageFiles": [
     "C:\\.nuget\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
@@ -57,7 +57,7 @@
     "C:\\.nuget\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
     "C:\\.nuget\\microsoft.extensions.hosting\\8.0.0\\microsoft.extensions.hosting.8.0.0.nupkg.sha512",
     "C:\\.nuget\\microsoft.extensions.hosting.abstractions\\8.0.0\\microsoft.extensions.hosting.abstractions.8.0.0.nupkg.sha512",
-    "C:\\.nuget\\microsoft.extensions.http\\6.0.0\\microsoft.extensions.http.6.0.0.nupkg.sha512",
+    "C:\\.nuget\\microsoft.extensions.http\\7.0.0\\microsoft.extensions.http.7.0.0.nupkg.sha512",
     "C:\\.nuget\\microsoft.extensions.http.polly\\6.0.10\\microsoft.extensions.http.polly.6.0.10.nupkg.sha512",
     "C:\\.nuget\\microsoft.extensions.logging\\9.0.0-preview.2.24128.5\\microsoft.extensions.logging.9.0.0-preview.2.24128.5.nupkg.sha512",
     "C:\\.nuget\\microsoft.extensions.logging.abstractions\\9.0.0-preview.2.24128.5\\microsoft.extensions.logging.abstractions.9.0.0-preview.2.24128.5.nupkg.sha512",
@@ -92,6 +92,7 @@
     "C:\\.nuget\\polly\\7.2.2\\polly.7.2.2.nupkg.sha512",
     "C:\\.nuget\\polly.extensions.http\\3.0.0\\polly.extensions.http.3.0.0.nupkg.sha512",
     "C:\\.nuget\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
+    "C:\\.nuget\\refit.httpclientfactory\\7.0.0\\refit.httpclientfactory.7.0.0.nupkg.sha512",
     "C:\\.nuget\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\.nuget\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\.nuget\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
@@ -112,7 +113,7 @@
     "C:\\.nuget\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\.nuget\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\.nuget\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
-    "C:\\.nuget\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\.nuget\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
     "C:\\.nuget\\swashbuckle.aspnetcore.annotations\\6.5.0\\swashbuckle.aspnetcore.annotations.6.5.0.nupkg.sha512",
     "C:\\.nuget\\swashbuckle.aspnetcore.newtonsoft\\6.5.0\\swashbuckle.aspnetcore.newtonsoft.6.5.0.nupkg.sha512",
     "C:\\.nuget\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
@@ -197,15 +198,5 @@
     "C:\\.nuget\\telegram.bots.extensions.aspnetcore\\5.9.0\\telegram.bots.extensions.aspnetcore.5.9.0.nupkg.sha512",
     "C:\\.nuget\\telegram.bots.extensions.polling\\5.9.0\\telegram.bots.extensions.polling.5.9.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Swashbuckle.AspNetCore from 6.5.0 to 6.4.0. Reference the package directly from the project to select a different version. \r\n tradeBot.TelegramBot -> tradeBot.Connector -> tradeBot -> Swashbuckle.AspNetCore (>= 6.5.0) \r\n tradeBot.TelegramBot -> tradeBot.Connector -> Swashbuckle.AspNetCore (>= 6.4.0)",
-      "libraryId": "Swashbuckle.AspNetCore",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
