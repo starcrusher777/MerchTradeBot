@@ -64,3 +64,4 @@ C:\Users\Ян\RiderProjects\tradeBot\tradeBot\obj\Debug\net7.0\refint\tradeBot.d
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot\obj\Debug\net7.0\tradeBot.pdb
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot\obj\Debug\net7.0\tradeBot.genruntimeconfig.cache
 C:\Users\Ян\RiderProjects\tradeBot\tradeBot\obj\Debug\net7.0\ref\tradeBot.dll
+C:\Users\Ян\RiderProjects\tradeBot\tradeBot\bin\Debug\net7.0\AutoMapper.dll

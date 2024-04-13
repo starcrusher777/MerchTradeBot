@@ -14,7 +14,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\tradeBot.API\tradeBot.API.csproj" />
       <ProjectReference Include="..\tradeBot.DAL\tradeBot.DAL.csproj" />
+      <ProjectReference Include="..\tradeBot\tradeBot.csproj" />
     </ItemGroup>
 
 </Project>

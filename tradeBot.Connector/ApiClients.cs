@@ -12,7 +12,7 @@ public class ApiClients
 #if DEBUG
     private string _baseUrl = "https://localhost:4242/";
 #else
-    private string _baseUrl = "https://api.dojo.wtf/";
+    private string _baseUrl = "";
 #endif
 
     public ApiClients(List<(string, string)> authHeaders)

@@ -1,77 +1,83 @@
 ﻿using tradeBot.TelegramBot.Handlers;
 using Telegram.Bot;
+using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
+using Telegram.Bot.Types.Enums;
+using tradeBot.Connector;
 
 
-namespace tradeBot.TelegramBot
+var connector = new Connector(new List<(string, string)>());
+
+TelegramBotClient botClient = new TelegramBotClient("token");
+
+using CancellationTokenSource cts = new ();
+
+// StartReceiving does not block the caller thread. Receiving is done on the ThreadPool.
+ReceiverOptions receiverOptions = new ()
 {
-    internal class Program
+    AllowedUpdates = Array.Empty<UpdateType>() // receive all update types
+};
+
+var messageHandler = new MessageHandler(botClient, connector);
+var callbackHandler = new CallbackHandler(botClient, connector);
+
+async Task HandleUpdateAsync(ITelegramBotClient _, Update update, CancellationToken cancellationToken)
+{
+    var handler = update switch
     {
-        private static TelegramBotClient _botClient;
-        public static async Task HandleUpdateAsync(ITelegramBotClient botClient, Update update, CancellationToken cancellationToken)
-        {
-            var messageHandler = new MessageHandler(_botClient);
-            var callbackHandler = new CallbackHandler(_botClient);
+        // UpdateType.Unknown:
+        // UpdateType.ChannelPost:
+        // UpdateType.EditedChannelPost:
+        // UpdateType.ShippingQuery:
+        // UpdateType.PreCheckoutQuery:
+        // UpdateType.Poll:
+        { Message: { } message }                       => messageHandler.OnMessageReceived(message, cancellationToken),
+        //{ EditedMessage: { } message }                 => BotOnMessageReceived(message, cancellationToken),
+        { CallbackQuery: { } callbackQuery }           => callbackHandler.OnCallbackReceived(callbackQuery, cancellationToken),
+        _                                              => Unknown()
+    };
 
-            var handler = update switch
-            {
-                // UpdateType.Unknown:
-                // UpdateType.ChannelPost:
-                // UpdateType.EditedChannelPost:
-                // UpdateType.ShippingQuery:
-                // UpdateType.PreCheckoutQuery:
-                // UpdateType.Poll:
-                { Message: { } message }                       => messageHandler.OnMessageReceived(message, cancellationToken), 
-                //{ EditedMessage: { } message }                 => BotOnMessageReceived(message, cancellationToken),
-                { CallbackQuery: { } callbackQuery }           => callbackHandler.OnCallbackReceived(callbackQuery, cancellationToken),
-                _                                              => Unknown()
-            };
-
-            try
-            {
-                await handler;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-        }
-        
-        private static Task Unknown()
-        {
-            return Task.CompletedTask;
-        }
-        
-
-        public static async Task Main(string[] args)
-        {
-            var botToken = "token"; // Replace with your actual bot token
-            
-            _botClient = new TelegramBotClient(botToken);
-            
-            Console.WriteLine("Starting..... " + _botClient.GetMeAsync().Result.FirstName);
-            var cts = new CancellationTokenSource();
-            var cancellationToken = cts.Token;
-            var receiverOptions = new ReceiverOptions
-            {
-                AllowedUpdates = {  }, 
-            };
-            
-            _botClient.StartReceiving(
-                (client, update, cancellationToken) => HandleUpdateAsync(client, update, cancellationToken),
-                (client, exception, arg3) => HandleErrorAsync(client, exception, arg3),
-                receiverOptions,
-                cancellationToken
-            );
-
-            Console.ReadLine();
-            
-        }
-        private static async Task HandleErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
-        {
-            
-            Console.WriteLine(Newtonsoft.Json.JsonConvert.SerializeObject(exception));
-        }
+    try
+    {
+        await handler;
     }
+    catch (Exception e)
+    {
+        Console.WriteLine(e);
+    }
+}
+
+botClient.StartReceiving(
+    updateHandler: HandleUpdateAsync,
+    pollingErrorHandler: HandlePollingErrorAsync,
+    receiverOptions: receiverOptions,
+    cancellationToken: cts.Token
+);
+
+var me = await botClient.GetMeAsync();
+
+Console.WriteLine($"Start listening for @{me.Username}");
+await Task.Delay(Timeout.Infinite);
+
+// Send cancellation request to stop bot
+cts.Cancel();
+
+
+Task HandlePollingErrorAsync(ITelegramBotClient botClient, Exception exception, CancellationToken cancellationToken)
+{
+    var ErrorMessage = exception switch
+    {
+        ApiRequestException apiRequestException
+            => $"Telegram API Error:\n[{apiRequestException.ErrorCode}]\n{apiRequestException.Message}",
+        _ => exception.ToString()
+    };
+
+    Console.WriteLine(ErrorMessage);
+    return Task.CompletedTask;
+}
+
+Task Unknown()
+{
+    return Task.CompletedTask;
 }

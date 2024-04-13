@@ -13,7 +13,7 @@ public class MessageHelper
         _botClient = botClient;
     }
 
-    public static MessageHelper GetInstance(TelegramBotClient botClient)
+    public MessageHelper GetInstance(TelegramBotClient botClient)
     {
         if (_instance == null) _instance = new MessageHelper(botClient);
         return _instance;

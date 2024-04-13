@@ -3,6 +3,7 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.ReplyMarkups;
 using tradeBot.TelegramBot.Helpers;
 using tradeBot.TelegramBot.Handlers; 
+using Refit;
 
 namespace tradeBot.TelegramBot.Handlers;
 
@@ -12,7 +13,7 @@ public class CallbackHandler
     private readonly MessageHelper _messageHelper;
     private readonly Connector.Connector _connector;
 
-    public CallbackHandler(TelegramBotClient client)
+    public CallbackHandler(TelegramBotClient client, Connector.Connector connector)
     {
         _client = client;
         _messageHelper = _messageHelper.GetInstance(client);

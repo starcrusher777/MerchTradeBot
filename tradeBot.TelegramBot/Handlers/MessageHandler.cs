@@ -14,10 +14,12 @@ namespace tradeBot.TelegramBot.Handlers;
 public class MessageHandler
 {
     private readonly TelegramBotClient _client;
+    private readonly Connector.Connector _connector;
 
-    public MessageHandler(TelegramBotClient client)
+    public MessageHandler(TelegramBotClient client, Connector.Connector connector)
     {
         _client = client;
+        _connector = connector;
     }
 
     public async Task OnMessageReceived(Message message, CancellationToken cancellationToken)

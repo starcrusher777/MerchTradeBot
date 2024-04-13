@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using tradeBot.DAL.Entities
-using Refit;    
+using tradeBot.DAL.Entities;
+
+using Refit;
+using tradeBot.API.Models;
 
 namespace tradeBot.Connector.API;
 
