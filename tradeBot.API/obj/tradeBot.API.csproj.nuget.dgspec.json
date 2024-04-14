@@ -58,6 +58,14 @@
               "target": "Package",
               "version": "[9.0.0-preview.2.24128.4, )"
             },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.2.6, )"
+            },
+            "Nancy.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

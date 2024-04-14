@@ -1,4 +1,4 @@
-﻿using tradeBot.TelegramBot.Handlers;
+﻿﻿using tradeBot.TelegramBot.Handlers;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
@@ -9,7 +9,7 @@ using tradeBot.Connector;
 
 var connector = new Connector(new List<(string, string)>());
 
-TelegramBotClient botClient = new TelegramBotClient("token");
+TelegramBotClient botClient = new TelegramBotClient("token"); //replace with ur actual token
 
 using CancellationTokenSource cts = new ();
 
