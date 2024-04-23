@@ -5,6 +5,6 @@ namespace tradeBot.API.Interfaces;
 
 public interface IUserService : IUserServiceAsync
 {
-    Task<UserEntity> GetUserAsync(long telegramId);
+   
     
 }

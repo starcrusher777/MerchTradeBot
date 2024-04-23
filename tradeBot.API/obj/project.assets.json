@@ -10895,34 +10895,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\.nuget": {}
+    "/Users/mac/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.API\\tradeBot.API.csproj",
+      "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj",
       "projectName": "tradeBot.API",
-      "projectPath": "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.API\\tradeBot.API.csproj",
-      "packagesPath": "C:\\.nuget",
-      "outputPath": "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.API\\obj\\",
+      "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj",
+      "packagesPath": "/Users/mac/.nuget/packages/",
+      "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/mac/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj": {
-              "projectPath": "C:\\Users\\Ян\\RiderProjects\\tradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj"
+            "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj": {
+              "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj"
             }
           }
         }
@@ -10991,7 +10990,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

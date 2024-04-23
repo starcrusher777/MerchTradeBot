@@ -16,9 +16,8 @@ namespace tradeBot.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 
-            if (!OperatingSystem.IsWindows())
+            if (!OperatingSystem.IsMacOS())
             {
                 builder.WebHost.ConfigureKestrel(options =>
                 {
@@ -31,6 +30,7 @@ namespace tradeBot.API
             builder.Services.AddTransient<IUserService, UserService>();
             builder.Services.AddTransient<IOfferService, OfferService>();
             builder.Services.AddTransient<ITelegramService, TelegramService>();
+            builder.Services.AddTransient<IAuthService, AuthService>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(opt =>
             {
