@@ -23,16 +23,16 @@ public class UserService : IUserService
     
     public async Task<AuthenticateResponse> AuthenticateAsync(AuthenticateRequest model)
     {
-        var user = await _database.Get<UserEntity>()
+        var user = await _database.User
             .FirstOrDefaultAsync(x => x.Username == model.Username && x.Password == model.Password);
-        
+    
         if (user == null)
         {
             return null;
         }
-        
+    
         var encodedJwt = _authService.GenerateJwtTokenSync(user);
-        
+    
         return new AuthenticateResponse(user, encodedJwt);
     }
 
