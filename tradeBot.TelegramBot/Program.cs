@@ -1,4 +1,4 @@
-﻿﻿using tradeBot.TelegramBot.Handlers;
+﻿using tradeBot.TelegramBot.Handlers;
 using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;

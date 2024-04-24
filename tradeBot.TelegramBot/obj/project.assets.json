@@ -11513,36 +11513,37 @@
     ]
   },
   "packageFolders": {
-    "/Users/mac/.nuget/packages/": {}
+    "C:\\.nuget": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.TelegramBot/tradeBot.TelegramBot.csproj",
+      "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.TelegramBot\\tradeBot.TelegramBot.csproj",
       "projectName": "tradeBot.TelegramBot",
-      "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.TelegramBot/tradeBot.TelegramBot.csproj",
-      "packagesPath": "/Users/mac/.nuget/packages/",
-      "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.TelegramBot/obj/",
+      "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.TelegramBot\\tradeBot.TelegramBot.csproj",
+      "packagesPath": "C:\\.nuget",
+      "outputPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.TelegramBot\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/mac/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj": {
-              "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj"
+            "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj": {
+              "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj"
             },
-            "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj": {
-              "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj"
+            "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj": {
+              "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj"
             }
           }
         }
@@ -11602,7 +11603,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

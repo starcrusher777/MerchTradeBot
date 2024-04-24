@@ -5,6 +5,4 @@ namespace tradeBot.API.Interfaces;
 
 public interface IUserService : IUserServiceAsync
 {
-   
-    
 }

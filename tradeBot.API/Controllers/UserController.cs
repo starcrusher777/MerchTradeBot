@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
-using tradeBot.API.Interfaces;
+using tradeBot.API.Interfaces.User;
 using tradeBot.API.Models;
 
 namespace tradeBot.API.Controllers;

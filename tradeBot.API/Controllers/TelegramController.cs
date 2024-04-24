@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using tradeBot.API.Interfaces;
+using tradeBot.API.Interfaces.Telegram;
+using tradeBot.API.Interfaces.User;
 
 namespace tradeBot.API.Controllers;
 

@@ -1,34 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj": {}
+    "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj": {}
   },
   "projects": {
-    "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj": {
+    "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj",
+        "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj",
         "projectName": "tradeBot.API",
-        "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj",
-        "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/obj/",
+        "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj",
+        "packagesPath": "C:\\.nuget",
+        "outputPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mac/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj": {
-                "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj"
+              "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj"
               }
             }
           }
@@ -97,41 +98,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj": {
+    "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj",
+        "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj",
         "projectName": "tradeBot.Connector",
-        "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/tradeBot.Connector.csproj",
-        "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.Connector/obj/",
+        "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\tradeBot.Connector.csproj",
+        "packagesPath": "C:\\.nuget",
+        "outputPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.Connector\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mac/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj": {
-                "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.API/tradeBot.API.csproj"
+              "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj": {
+                "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.API\\tradeBot.API.csproj"
               },
-              "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj": {
-                "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj"
+              "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj": {
+                "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj"
               },
-              "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/tradeBot.csproj": {
-                "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/tradeBot.csproj"
+              "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\tradeBot.csproj": {
+                "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\tradeBot.csproj"
               }
             }
           }
@@ -186,27 +188,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj": {
+    "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj",
         "projectName": "tradeBot.DAL",
-        "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj",
-        "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/obj/",
+        "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj",
+        "packagesPath": "C:\\.nuget",
+        "outputPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mac/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -285,27 +288,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/tradeBot.csproj": {
+    "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\tradeBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/tradeBot.csproj",
+        "projectUniqueName": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\tradeBot.csproj",
         "projectName": "tradeBot",
-        "projectPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/tradeBot.csproj",
-        "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot/obj/",
+        "projectPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\tradeBot.csproj",
+        "packagesPath": "C:\\.nuget",
+        "outputPath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/mac/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Ян\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -411,15 +415,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
+              "version": "[7.0.15, 7.0.15]"
             },
             {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[7.0.16, 7.0.16]"
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.15, 7.0.15]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.16, 7.0.16]"
+              "version": "[7.0.15, 7.0.15]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.15, 7.0.15]"
             }
           ],
           "frameworkReferences": {
@@ -427,7 +435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

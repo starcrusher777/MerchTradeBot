@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "HSeJQ4/EmdcOdVE4SQPOwuB8C1hv/AVAfDr60SQoU3w=",
+  "Hash": "R8VAxPk+e97xoLzPUPZIgEggCppjo8rBRe/u7acPH1U=",
   "Source": "tradeBot.API",
   "BasePath": "_content/tradeBot.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "/Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/tradeBot.DAL.csproj",
+      "Identity": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj",
       "Version": 2,
       "Source": "tradeBot.DAL",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

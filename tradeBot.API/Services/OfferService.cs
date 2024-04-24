@@ -1,19 +1,20 @@
 ﻿using tradeBot.DAL.Database;
 using tradeBot.DAL.Entities;
 using tradeBot.API.Interfaces;
+using tradeBot.API.Interfaces.Offer;
+using tradeBot.API.Interfaces.User;
+using IUserService = tradeBot.API.Interfaces.IUserService;
 
 
 namespace tradeBot.API.Services;
 
 public class OfferService : IOfferService
 {
-    private readonly IOfferService _offerService;
     private readonly IUserService _userService;
     private readonly ApplicationContext _database;
 
-    public OfferService(IOfferService offerService, IUserService userService, ApplicationContext database)
+    public OfferService(IUserService userService, ApplicationContext database)
     {
-        _offerService = offerService;
         _userService = userService;
         _database = database;
     }
