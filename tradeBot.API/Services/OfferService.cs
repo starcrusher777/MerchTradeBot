@@ -3,7 +3,6 @@ using tradeBot.DAL.Entities;
 using tradeBot.API.Interfaces;
 using tradeBot.API.Interfaces.Offer;
 using tradeBot.API.Interfaces.User;
-using IUserService = tradeBot.API.Interfaces.IUserService;
 
 
 namespace tradeBot.API.Services;

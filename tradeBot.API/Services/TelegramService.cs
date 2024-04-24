@@ -1,4 +1,5 @@
-﻿using tradeBot.API.Interfaces.Offer;
+﻿using tradeBot.API.Interfaces;
+using tradeBot.API.Interfaces.Offer;
 using tradeBot.API.Interfaces.Telegram;
 using tradeBot.API.Interfaces.User;
 using tradeBot.DAL.Database;

@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
 using AutoMapper;
+using tradeBot.API.Interfaces;
 using tradeBot.API.Models;
 using tradeBot.DAL.Database;
 using tradeBot.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 using tradeBot.API.Interfaces.Auth;
 using tradeBot.API.Interfaces.User;
 

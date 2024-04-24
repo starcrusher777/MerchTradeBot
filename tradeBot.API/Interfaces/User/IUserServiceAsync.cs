@@ -1,7 +1,8 @@
-﻿using tradeBot.API.Models;
+﻿using tradeBot.API.Interfaces.User;
+using tradeBot.API.Models;
 using tradeBot.DAL.Entities;
 
-namespace tradeBot.API.Interfaces;
+namespace tradeBot.API.Interfaces.User;
 
 public interface IUserServiceAsync
 {

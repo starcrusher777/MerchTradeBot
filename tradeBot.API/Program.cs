@@ -1,7 +1,11 @@
 using System.Net;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Nancy.Authentication.JwtBearer;
+using NLog;
+using tradeBot.API.Interfaces;
 using tradeBot.API.Interfaces.Auth;
 using tradeBot.API.Interfaces.Offer;
 using tradeBot.API.Interfaces.Telegram;
@@ -17,7 +21,7 @@ namespace tradeBot.API
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            if (!OperatingSystem.IsMacOS())
+            if (!OperatingSystem.IsWindows())
             {
                 builder.WebHost.ConfigureKestrel(options =>
                 {

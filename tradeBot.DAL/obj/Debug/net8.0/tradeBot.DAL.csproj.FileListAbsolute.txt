@@ -309,7 +309,6 @@ C:/Users/Ян/RiderProjects/tradeBot/tradeBot.DAL/bin/Debug/net8.0/AutoMapper.dl
 /Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/obj/Debug/net8.0/tradeBot.DAL.pdb
 /Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/obj/Debug/net8.0/tradeBot.DAL.genruntimeconfig.cache
 /Users/mac/RiderProjects/MerchTradeBot/tradeBot.DAL/obj/Debug/net8.0/ref/tradeBot.DAL.dll
-<<<<<<< HEAD
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\bin\Debug\net8.0\appsettings.json
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\bin\Debug\net8.0\tradeBot.DAL.exe
@@ -466,5 +465,3 @@ C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\refint\t
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.pdb
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.genruntimeconfig.cache
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\ref\tradeBot.DAL.dll
-=======
->>>>>>> ed54d39ea189de68059bf1a005e210079bd60fbe
