@@ -512,3 +512,5 @@ C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\obj\Debug\net8.0\refint\t
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\obj\Debug\net8.0\tradeBot.API.pdb
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\obj\Debug\net8.0\tradeBot.API.genruntimeconfig.cache
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\obj\Debug\net8.0\ref\tradeBot.API.dll
+C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

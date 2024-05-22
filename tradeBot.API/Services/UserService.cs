@@ -1,10 +1,12 @@
 ﻿using System.Data.Entity;
 using AutoMapper;
+using Microsoft.AspNetCore.Http.HttpResults;
 using tradeBot.API.Interfaces;
 using tradeBot.API.Models;
 using tradeBot.DAL.Database;
 using tradeBot.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
+using tradeBot.API.Exceptions.User;
 using tradeBot.API.Interfaces.Auth;
 using tradeBot.API.Interfaces.User;
 
@@ -37,9 +39,19 @@ public class UserService : IUserService
     
         return new AuthenticateResponse(user, encodedJwt);
     }
-
-    public Task<UserEntity> GetUserAsync(long telegramId)
+    
+    public async Task<UserEntity> GetUserAsync(long telegramId)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<IQueryable<UserEntity>> GetUserById(long telegramId)
+    {
+        IQueryable<UserEntity> user = _database.Get<UserEntity>().Where(x => x.TelegramId == telegramId);
+        if (user == null)
+        {
+            throw new UserIdNotFoundException(telegramId);
+        }
+        return user;
     }
 }

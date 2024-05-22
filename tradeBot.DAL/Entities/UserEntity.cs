@@ -7,6 +7,6 @@ public class UserEntity
     public string Username { get; set; }
     public string Password { get; set; }
     public bool IsBanned { get; set; }
-    public List<OfferEntity> Offers { get; set; } = new();
+    public virtual List<OfferEntity> Offers { get; set; } = new();
     public virtual TelegramCacheEntity TelegramCache { get; set; } = new();
 }

@@ -21,9 +21,20 @@ public class TelegramController : ControllerBase
         _userService = userService;
     }
     
-    [HttpGet]
+    [HttpGet("RegisterUser")]
     public async Task<bool> RegisterUser(string username, string password, long telegramId)
     {
         return await _telegramService.RegisterUserAsync(username, password, telegramId);
+    }
+    [HttpGet("SetPrevMenu")]
+    public async Task SetPreviousMenu(long telegramId, string menuName)
+    {
+        await _telegramService.SetPreviousMenuAsync(telegramId, menuName);
+    }
+
+    [HttpGet("GetPrevMenu")]
+    public async Task<string> GetPreviousMenu(long telegramId)
+    {
+        return await _telegramService.GetPreviousMenuAsync(telegramId);
     }
 }

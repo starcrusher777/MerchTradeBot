@@ -17,6 +17,7 @@
       </PackageReference>
       <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.0-preview.2.24128.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.LazyLoading" Version="1.1.1-beta4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.0-preview.2.24128.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0-preview.2.24128.4" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0-preview.2.24128.4">

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "bcgziGyXEEBkABKiqvbuaMpI0maB/hAJQHwu/ltB2/eckRl4ztNn01Ipum8xCAcBQEGR8oaJjdZLjQi+BPMlWQ==",
+  "dgSpecHash": "MBJdf7KPhJpzhTZiOXb92pqyVCvll2nKP5txCN+e4zD3isvkgcZWMnkmrHwbznvwgavxQdNNzUmnyAol2U/5wQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Ян\\RiderProjects\\MerchTradeBot\\tradeBot.DAL\\tradeBot.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\.nuget\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\.nuget\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\.nuget\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\.nuget\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\.nuget\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\.nuget\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\.nuget\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
@@ -24,6 +25,7 @@
     "C:\\.nuget\\microsoft.entityframeworkcore.design\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.design.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\.nuget\\microsoft.entityframeworkcore.inmemory\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.inmemory.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\.nuget\\microsoft.entityframeworkcore.lazyloading\\1.1.1-beta4\\microsoft.entityframeworkcore.lazyloading.1.1.1-beta4.nupkg.sha512",
+    "C:\\.nuget\\microsoft.entityframeworkcore.proxies\\8.0.4\\microsoft.entityframeworkcore.proxies.8.0.4.nupkg.sha512",
     "C:\\.nuget\\microsoft.entityframeworkcore.relational\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.relational.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\.nuget\\microsoft.entityframeworkcore.sqlserver\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.sqlserver.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\.nuget\\microsoft.entityframeworkcore.tools\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.tools.9.0.0-preview.2.24128.4.nupkg.sha512",

@@ -12,6 +12,7 @@ namespace tradeBot.DAL.Database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
            optionsBuilder.UseSqlServer("Server=localhost;Database=tradeBot;Trusted_Connection=True;TrustServerCertificate=True;");
+           optionsBuilder.UseLazyLoadingProxies();
         }
 
         public bool Delete<T>(T record) where T : class

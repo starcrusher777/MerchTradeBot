@@ -1,4 +1,5 @@
-﻿using tradeBot.DAL.Database;
+﻿using Microsoft.EntityFrameworkCore;
+using tradeBot.DAL.Database;
 using tradeBot.DAL.Entities;
 using tradeBot.API.Interfaces;
 using tradeBot.API.Interfaces.Offer;
@@ -18,7 +19,7 @@ public class OfferService : IOfferService
         _database = database;
     }
 
-    public async Task<OfferEntity> AddOffer(long telegramId, string offerType, string name, long price, string description,
+    public async Task<OfferEntity> CreateOffer(long telegramId, string offerType, string name, long price, string description,
         byte[] imageData)
     {
         var user = await _userService.GetUserAsync(telegramId);
@@ -34,5 +35,20 @@ public class OfferService : IOfferService
         
         await _database.UpdateOrInsertAsync(offer);
         return offer;
+    }
+    
+    public async Task<List<OfferEntity>> GetAllOffersAsync()
+    {
+        return await _getAllOffers().ToListAsync();
+    }
+
+    public async Task<List<OfferEntity>> GetOffersByUserId(long telegramId)
+    {
+        return await GetOffersByUserId(telegramId);
+    }
+
+    private IQueryable<OfferEntity> _getAllOffers()
+    {
+        return _database.Get<OfferEntity>();
     }
 }

@@ -62,6 +62,22 @@
           }
         }
       },
+      "Castle.Core/5.1.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.EventLog": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Castle.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -548,6 +564,23 @@
         },
         "runtime": {
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.LazyLoading.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Proxies/8.0.4": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "5.1.1",
+          "Microsoft.EntityFrameworkCore": "8.0.4"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.EntityFrameworkCore.Relational/9.0.0-preview.2.24128.4": {
@@ -2828,6 +2861,30 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "Castle.Core/5.1.1": {
+      "sha512": "rpYtIczkzGpf+EkZgDr9CClTdemhsrwA/W5hMoPjLkRFnXzH44zDLoovXeKtmxb1ykXK9aJVODSpiJml8CTw2g==",
+      "type": "package",
+      "path": "castle.core/5.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ASL - Apache Software Foundation License.txt",
+        "CHANGELOG.md",
+        "LICENSE",
+        "castle-logo.png",
+        "castle.core.5.1.1.nupkg.sha512",
+        "castle.core.nuspec",
+        "lib/net462/Castle.Core.dll",
+        "lib/net462/Castle.Core.xml",
+        "lib/net6.0/Castle.Core.dll",
+        "lib/net6.0/Castle.Core.xml",
+        "lib/netstandard2.0/Castle.Core.dll",
+        "lib/netstandard2.0/Castle.Core.xml",
+        "lib/netstandard2.1/Castle.Core.dll",
+        "lib/netstandard2.1/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
     "EntityFramework/6.4.4": {
       "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
       "type": "package",
@@ -4034,6 +4091,21 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.LazyLoading.dll",
         "microsoft.entityframeworkcore.lazyloading.1.1.1-beta4.nupkg.sha512",
         "microsoft.entityframeworkcore.lazyloading.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Proxies/8.0.4": {
+      "sha512": "6eLiNUs9qpRvJ+lc2u4mmTmJgVPc9dr07GZX1zf7fIUmXvzQCOl6awXV/dGB1EvHSJV0EO9oJqCQZWSGHC77oA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.proxies/8.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.dll",
+        "lib/net8.0/Microsoft.EntityFrameworkCore.Proxies.xml",
+        "microsoft.entityframeworkcore.proxies.8.0.4.nupkg.sha512",
+        "microsoft.entityframeworkcore.proxies.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/9.0.0-preview.2.24128.4": {
@@ -9110,6 +9182,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0-preview.2.24128.4",
       "Microsoft.EntityFrameworkCore.InMemory >= 9.0.0-preview.2.24128.4",
       "Microsoft.EntityFrameworkCore.LazyLoading >= 1.1.1-beta4",
+      "Microsoft.EntityFrameworkCore.Proxies >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Relational >= 9.0.0-preview.2.24128.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.0-preview.2.24128.4",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0-preview.2.24128.4"
@@ -9179,6 +9252,10 @@
           "Microsoft.EntityFrameworkCore.LazyLoading": {
             "target": "Package",
             "version": "[1.1.1-beta4, )"
+          },
+          "Microsoft.EntityFrameworkCore.Proxies": {
+            "target": "Package",
+            "version": "[8.0.4, )"
           },
           "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
