@@ -52,15 +52,19 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.24172.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0-preview.2.24128.4, )"
+              "version": "[9.0.0-preview.3.24172.4, )"
             },
             "NLog": {
               "target": "Package",
-              "version": "[5.2.6, )"
+              "version": "[5.2.8, )"
             },
             "Nancy.Authentication.JwtBearer": {
               "target": "Package",
@@ -76,7 +80,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
@@ -253,6 +257,10 @@
             "Microsoft.EntityFrameworkCore.LazyLoading": {
               "target": "Package",
               "version": "[1.1.1-beta4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Relational": {
               "target": "Package",

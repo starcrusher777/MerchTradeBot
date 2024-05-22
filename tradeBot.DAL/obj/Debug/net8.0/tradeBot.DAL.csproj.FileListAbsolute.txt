@@ -465,3 +465,5 @@ C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\refint\t
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.pdb
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\tradeBot.DAL.genruntimeconfig.cache
 C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\obj\Debug\net8.0\ref\tradeBot.DAL.dll
+C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\Ян\RiderProjects\MerchTradeBot\tradeBot.DAL\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Proxies.dll

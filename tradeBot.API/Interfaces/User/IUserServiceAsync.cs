@@ -8,4 +8,5 @@ public interface IUserServiceAsync
 {
     Task<AuthenticateResponse> AuthenticateAsync(AuthenticateRequest model);
     Task<UserEntity> GetUserAsync(long telegramId);
+    Task<IQueryable<UserEntity>> GetUserById(long telegramId);
 }

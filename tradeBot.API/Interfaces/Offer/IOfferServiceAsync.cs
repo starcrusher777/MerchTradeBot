@@ -4,6 +4,10 @@ namespace tradeBot.API.Interfaces.Offer;
 
 public interface IOfferServiceAsync
 {
-    public Task<OfferEntity> AddOffer(long userId, string offerType, string name, long price, string description,
+    Task<OfferEntity> CreateOffer(long userId, string offerType, string name, long price, string description,
         byte[] imageData);
+
+    Task<List<OfferEntity>> GetAllOffersAsync();
+    Task<List<OfferEntity>> GetOffersByUserId(long telegramId);
+
 }

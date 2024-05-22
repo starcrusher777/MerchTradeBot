@@ -25,7 +25,7 @@ namespace tradeBot.API
             {
                 builder.WebHost.ConfigureKestrel(options =>
                 {
-                    options.ListenLocalhost(5427, o => o.Protocols = HttpProtocols.Http2);
+                    options.ListenLocalhost(5285, o => o.Protocols = HttpProtocols.Http2);
                 });
             }
 
